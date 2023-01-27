@@ -55,12 +55,12 @@ Public Class frmLogin
 
         If dt.Rows.Count = 1 Then
             frmAdmin.Show()
-            frmAdmin.lblUserType.Text = "Welcome, " & username
+            frmAdmin.lblUser.Text = "Welcome, " & username
             Me.Hide()
 
 
         Else
-            MsgBox("The username and password is Incorrect!")
+            MsgBox("The username and password is Incorrect!", MsgBoxStyle.OkOnly, "Invalid Login")
         End If
     End Sub
 

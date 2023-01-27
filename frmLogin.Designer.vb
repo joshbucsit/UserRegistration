@@ -84,6 +84,7 @@ Partial Class frmLogin
         Me.txtPassword.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.txtPassword.Location = New System.Drawing.Point(173, 279)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(257, 37)
         Me.txtPassword.TabIndex = 5
         Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
