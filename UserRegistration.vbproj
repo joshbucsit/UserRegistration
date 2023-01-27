@@ -3,9 +3,9 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>UserRegistration.My.MyApplication</StartupObject>
+    <StartupObject>UserRegistration.frmLogin</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,12 @@
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
     <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

@@ -33,7 +33,7 @@ Public Class frmLogin
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         'connect the database and filter the input
-        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\LDRRMA\source\repos\IntegrativeProgramming02\bin\Database.mdb")
+        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\LDRRMA\source\repos\UserRegistration\bin\Database.mdb")
         Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM [tblUser] WHERE [username] = '" & txtUsername.Text & "' and [password] = '" & txtPassword.Text & "'", conn)
         'Dim da As New OleDbDataAdapter(cmd)
 
@@ -53,16 +53,25 @@ Public Class frmLogin
             usertype = dr("type").ToString
         End While
 
+
         If dt.Rows.Count = 1 Then
-            frmAdmin.Show()
-            frmAdmin.lblUser.Text = "Welcome, " & username
-            Me.Hide()
-
-
+            If usertype = "Admin" Then
+                frmAdmin.Show()
+                frmAdmin.lblUser.Text = "Welcome, " & username & "!"
+                Me.Hide()
+            Else
+                frmUser.Show()
+                frmUser.lblUserGreet.Text = "Welcome, " & username & "!"
+            End If
         Else
-            MsgBox("The username and password is Incorrect!", MsgBoxStyle.OkOnly, "Invalid Login")
+                MsgBox("The username and password is Incorrect!", MsgBoxStyle.OkOnly, "Invalid Login")
         End If
     End Sub
 
+    Private Sub btnNewUser_Click(sender As Object, e As EventArgs) Handles btnNewUser.Click
+        Me.Hide()
+        frmRegister.Show()
+
+    End Sub
 End Class
 

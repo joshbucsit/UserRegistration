@@ -41,7 +41,7 @@ Partial Class frmLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Symbol", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(61, 131)
+        Me.Label1.Location = New System.Drawing.Point(61, 121)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(369, 86)
         Me.Label1.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class frmLogin
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(177, 22)
+        Me.PictureBox1.Location = New System.Drawing.Point(173, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(118, 106)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

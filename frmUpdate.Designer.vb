@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmAdd
+Partial Class frmUpdate
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmAdd
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdd))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUpdate))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtAddUsername = New System.Windows.Forms.TextBox()
@@ -32,7 +32,10 @@ Partial Class frmAdd
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.btnAdd = New FontAwesome.Sharp.IconButton()
+        Me.btnUpdate = New FontAwesome.Sharp.IconButton()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnUpdateClose = New FontAwesome.Sharp.IconButton()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,11 +43,11 @@ Partial Class frmAdd
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(146, 61)
+        Me.Label1.Location = New System.Drawing.Point(140, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 32)
+        Me.Label1.Size = New System.Drawing.Size(214, 32)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Register"
+        Me.Label1.Text = "Update User Data"
         '
         'Label2
         '
@@ -53,9 +56,9 @@ Partial Class frmAdd
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(12, 149)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 21)
+        Me.Label2.Size = New System.Drawing.Size(91, 21)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Username"
+        Me.Label2.Text = "Username:"
         '
         'txtAddUsername
         '
@@ -80,9 +83,9 @@ Partial Class frmAdd
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(12, 207)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(82, 21)
+        Me.Label3.Size = New System.Drawing.Size(86, 21)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Password"
+        Me.Label3.Text = "Password:"
         '
         'TextBox2
         '
@@ -99,9 +102,9 @@ Partial Class frmAdd
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(12, 262)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 21)
+        Me.Label4.Size = New System.Drawing.Size(85, 21)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Fullname"
+        Me.Label4.Text = "Fullname:"
         '
         'Label5
         '
@@ -110,9 +113,9 @@ Partial Class frmAdd
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(12, 317)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(78, 21)
+        Me.Label5.Size = New System.Drawing.Size(82, 21)
         Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Usertype"
+        Me.Label5.Text = "Usertype:"
         '
         'ListBox1
         '
@@ -125,28 +128,55 @@ Partial Class frmAdd
         Me.ListBox1.Size = New System.Drawing.Size(145, 25)
         Me.ListBox1.TabIndex = 8
         '
-        'btnAdd
+        'btnUpdate
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnAdd.IconChar = FontAwesome.Sharp.IconChar.Rotate
-        Me.btnAdd.IconColor = System.Drawing.Color.Green
-        Me.btnAdd.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnAdd.IconSize = 56
-        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.Location = New System.Drawing.Point(26, 394)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(159, 57)
-        Me.btnAdd.TabIndex = 9
-        Me.btnAdd.Text = "        Update"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnUpdate.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.Rotate
+        Me.btnUpdate.IconColor = System.Drawing.Color.Green
+        Me.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnUpdate.IconSize = 56
+        Me.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnUpdate.Location = New System.Drawing.Point(26, 394)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(159, 57)
+        Me.btnUpdate.TabIndex = 9
+        Me.btnUpdate.Text = "        Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'frmAdd
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 109)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
+        'btnUpdateClose
+        '
+        Me.btnUpdateClose.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdateClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose
+        Me.btnUpdateClose.IconColor = System.Drawing.Color.Red
+        Me.btnUpdateClose.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnUpdateClose.IconSize = 56
+        Me.btnUpdateClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnUpdateClose.Location = New System.Drawing.Point(209, 394)
+        Me.btnUpdateClose.Name = "btnUpdateClose"
+        Me.btnUpdateClose.Size = New System.Drawing.Size(159, 57)
+        Me.btnUpdateClose.TabIndex = 11
+        Me.btnUpdateClose.Text = "       Close"
+        Me.btnUpdateClose.UseVisualStyleBackColor = True
+        '
+        'frmUpdate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(397, 517)
-        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.btnUpdateClose)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)
@@ -157,8 +187,10 @@ Partial Class frmAdd
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmAdd"
+        Me.MinimizeBox = False
+        Me.Name = "frmUpdate"
         Me.Text = "Add"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -173,5 +205,7 @@ Partial Class frmAdd
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents btnAdd As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnUpdate As FontAwesome.Sharp.IconButton
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnUpdateClose As FontAwesome.Sharp.IconButton
 End Class
