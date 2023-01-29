@@ -26,7 +26,6 @@ Partial Class frmRegister
         Me.btnRegisterClose = New FontAwesome.Sharp.IconButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnRegister = New FontAwesome.Sharp.IconButton()
-        Me.listType = New System.Windows.Forms.ListBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtAddFullname = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,6 +34,7 @@ Partial Class frmRegister
         Me.txtAddUsername = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbUsertype = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,17 +77,6 @@ Partial Class frmRegister
         Me.btnRegister.TabIndex = 21
         Me.btnRegister.Text = "        Register"
         Me.btnRegister.UseVisualStyleBackColor = True
-        '
-        'listType
-        '
-        Me.listType.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.listType.FormattingEnabled = True
-        Me.listType.ItemHeight = 21
-        Me.listType.Items.AddRange(New Object() {"---", "Admin", "User"})
-        Me.listType.Location = New System.Drawing.Point(250, 357)
-        Me.listType.Name = "listType"
-        Me.listType.Size = New System.Drawing.Size(145, 25)
-        Me.listType.TabIndex = 20
         '
         'Label5
         '
@@ -171,16 +160,25 @@ Partial Class frmRegister
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Register User"
         '
+        'cbUsertype
+        '
+        Me.cbUsertype.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbUsertype.FormattingEnabled = True
+        Me.cbUsertype.Location = New System.Drawing.Point(274, 357)
+        Me.cbUsertype.Name = "cbUsertype"
+        Me.cbUsertype.Size = New System.Drawing.Size(121, 29)
+        Me.cbUsertype.TabIndex = 24
+        '
         'frmRegister
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(434, 554)
+        Me.Controls.Add(Me.cbUsertype)
         Me.Controls.Add(Me.btnRegisterClose)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnRegister)
-        Me.Controls.Add(Me.listType)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtAddFullname)
         Me.Controls.Add(Me.Label4)
@@ -201,7 +199,6 @@ Partial Class frmRegister
     Friend WithEvents btnRegisterClose As FontAwesome.Sharp.IconButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnRegister As FontAwesome.Sharp.IconButton
-    Friend WithEvents listType As ListBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtAddFullname As TextBox
     Friend WithEvents Label4 As Label
@@ -210,4 +207,5 @@ Partial Class frmRegister
     Friend WithEvents txtAddUsername As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents cbUsertype As ComboBox
 End Class

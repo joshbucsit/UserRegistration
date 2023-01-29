@@ -49,10 +49,10 @@ Partial Class frmLogin
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(173, 12)
+        Me.PictureBox1.Image = Global.UserRegistration.My.Resources.Resources.icons8_users_681
+        Me.PictureBox1.Location = New System.Drawing.Point(150, 17)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 106)
+        Me.PictureBox1.Size = New System.Drawing.Size(164, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -102,6 +102,7 @@ Partial Class frmLogin
         '
         'btnLogin
         '
+        Me.btnLogin.BackColor = System.Drawing.Color.WhiteSmoke
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnLogin.IconChar = FontAwesome.Sharp.IconChar.Mouse
         Me.btnLogin.IconColor = System.Drawing.Color.Green
@@ -113,10 +114,11 @@ Partial Class frmLogin
         Me.btnLogin.Size = New System.Drawing.Size(169, 67)
         Me.btnLogin.TabIndex = 6
         Me.btnLogin.Text = "    Login"
-        Me.btnLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'btnClose
         '
+        Me.btnClose.BackColor = System.Drawing.Color.WhiteSmoke
         Me.btnClose.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnClose.IconChar = FontAwesome.Sharp.IconChar.Multiply
         Me.btnClose.IconColor = System.Drawing.Color.Red
@@ -128,7 +130,7 @@ Partial Class frmLogin
         Me.btnClose.Size = New System.Drawing.Size(169, 67)
         Me.btnClose.TabIndex = 7
         Me.btnClose.Text = "    Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'btnForgotPass
         '
