@@ -49,10 +49,11 @@ Partial Class frmLogin
         '
         'PictureBox1
         '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox1.Image = Global.UserRegistration.My.Resources.Resources.icons8_users_681
-        Me.PictureBox1.Location = New System.Drawing.Point(150, 17)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(164, 118)
+        Me.PictureBox1.Size = New System.Drawing.Size(476, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -119,6 +120,8 @@ Partial Class frmLogin
         'btnClose
         '
         Me.btnClose.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime
         Me.btnClose.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnClose.IconChar = FontAwesome.Sharp.IconChar.Multiply
         Me.btnClose.IconColor = System.Drawing.Color.Red
